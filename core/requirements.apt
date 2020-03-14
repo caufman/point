@@ -9,7 +9,7 @@ lua-sec
 mercurial
 postgresql-9.3
 prosody
-python-dev
+python-all-dev
 python-imaging
 python-virtualenv
 realpath

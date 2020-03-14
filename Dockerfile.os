@@ -1,7 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.04
 COPY ./core/requirements.pip /home/point/requirements.pip
 VOLUME ["/home/point/core", "/home/point/img"]
-RUN apt-get update && \
+RUN \
+    echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections; \
+    apt-get install -y -q && \
+    apt-get update && \
     apt-get install -y \
       build-essential \
       libevent-dev \
@@ -15,7 +18,6 @@ RUN apt-get update && \
       python-dateutil \
       python-dev \
       python-dnspython \
-      python-imaging \
       python-levenshtein \
       python-lxml \
       python-meld3 \
