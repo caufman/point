@@ -1,17 +1,16 @@
-FROM "ubuntu:14.04"
+FROM "ubuntu:18.04"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
   && apt-get install -y --no-install-recommends \
     adduser \
     ca-certificates \
-    libevent-1.4-2 \
-    libevent-2.0-5 \
-    libevent-extra-2.0-5 \
-    libevent-core-2.0-5 \
-    libevent-openssl-2.0-5 \
-    libevent-pthreads-2.0-5 \
+    libevent-2.1-6 \
+    libevent-extra-2.1-6 \
+    libevent-core-2.1-6 \
+    libevent-openssl-2.1-6 \
+    libevent-pthreads-2.1-6 \
     libidn11 \
-    libssl1.0.0 \
+    libssl1.1 \
     lsb-base \
     lua-bitop \
     lua-event \
@@ -20,7 +19,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     lua-sec \
     lua-socket \
     lua-zlib \
-    lua5.1 \
+    lua5.3 \
     luajit \
     openssl \
     prosody \

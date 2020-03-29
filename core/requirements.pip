@@ -10,17 +10,18 @@ bitbucket-api==0.5.0
 elasticsearch==2.2.0
 feedparser==5.2.1
 filemagic==1.6
-gevent
+gevent #==0.13.8
 gevent-websocket
-https://github.com/artss/geweb/archive/0.0.3.zip
-greenlet==0.4.9
+#https://github.com/artss/geweb/archive/master.zip
+https://github.com/caufman/geweb/archive/update_fix.zip
+greenlet
 html2text==2016.1.8
 #http://dist.plone.org/thirdparty/PIL-1.1.7.tar.gz
 #lxml==3.5.0
 #meld3==0.6.10
 mercurial==2.8.2
 oauthlib==1.0.3
-psycopg2==2.7.1
+psycopg2
 #python-Levenshtein==0.12.0
 #python-dateutil==2.4.2
 #pytz==2015.7
